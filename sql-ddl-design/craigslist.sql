@@ -1,7 +1,7 @@
 
 CREATE DATABASE craigslist;
 
-\c medical_center
+\c craigslist
 
 -- - The region of the craigslist post (San Francisco, Atlanta, Seattle, etc)
 CREATE TABLE regions
