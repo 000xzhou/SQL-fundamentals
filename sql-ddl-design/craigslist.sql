@@ -25,7 +25,7 @@ CREATE TABLE posts
   title TEXT NOT NULL,
   post TEXT NOT NULL,
   user INTEGER REFERENCES users ON DELETE NULL,
-  location_post,
+  location_post TEXT,
   region INTEGER REFERENCES regions ON DELETE NULL,
   categorie INTEGER REFERENCES categories ON DELETE NULL,
 );
