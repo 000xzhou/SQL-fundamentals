@@ -7,6 +7,11 @@ CREATE DATABASE outer_space;
 
 \c outer_space
 
+-- tables
+-- planets => name, moons, orbital_period_in_years, {orbits_around - stars}, {galaxy}
+-- galaxy => name
+-- stars => name
+
 CREATE TABLE planets
 (
   id SERIAL PRIMARY KEY,

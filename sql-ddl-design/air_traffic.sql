@@ -7,6 +7,14 @@ CREATE DATABASE air_traffic;
 
 \c air_traffic
 
+-- tables
+-- person => first name, last name
+-- ticket => {person}, seat, {plane}
+-- city => city
+-- country => country 
+-- airline => airline 
+-- plane => departure, arrival, {airline}, {from_city}, {from_country}, {to_city}, {to_country}
+
 CREATE TABLE tickets
 (
   id SERIAL PRIMARY KEY,

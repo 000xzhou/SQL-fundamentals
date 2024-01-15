@@ -7,6 +7,12 @@ CREATE DATABASE music;
 
 \c music
 
+-- tables 
+-- artist => name 
+-- producers => name 
+-- album => {artist}, {producers}, name_of_album, release_date
+-- songs => {album}, title, duration_in_seconds
+
 CREATE TABLE songs
 (
   id SERIAL PRIMARY KEY,
