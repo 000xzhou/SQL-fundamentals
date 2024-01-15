@@ -27,7 +27,6 @@ CREATE TABLE referees
   id SERIAL PRIMARY KEY,
   first_name TEXT NOT NULL,
   last_name TEXT NOT NULL,
-  game_id INTEGER REFERENCES games ON DELETE NULL,
 );
 
 -- - All of the goals scored by every player for each game
@@ -45,6 +44,7 @@ CREATE TABLE games
   id SERIAL PRIMARY KEY,
   team_one_id INTEGER REFERENCES teams ON DELETE NULL,
   team_two_id INTEGER REFERENCES teams ON DELETE NULL,
+  referees_id INTEGER REFERENCES referees ON DELETE NULL,
 );
 
 -- - All of the start and end dates for season that a league has
